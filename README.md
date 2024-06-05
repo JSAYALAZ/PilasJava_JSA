@@ -9,3 +9,5 @@ UPS - CUENCA
 
 ### v2.0.0
 - Initial version
+### v2.0.1
+- Estructura datos lineales - Colas

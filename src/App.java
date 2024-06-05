@@ -1,3 +1,5 @@
+import Materia.Colas.Cola;
+import Materia.Colas.ColaGenerica;
 import Materia.Model.Pantalla;
 import Materia.Pilas.Pila;
 import Materia.Pilas.PilaGenerica;
@@ -31,5 +33,38 @@ public class App {
         System.out.println("En la cima de la pila "+pantallas.peek().getNombre());
 
 
+        Cola colaInt = new Cola();
+        colaInt.addNode(5);
+        colaInt.addNode(2);
+        colaInt.addNode(1);
+        colaInt.addNode(54);
+        colaInt.addNode(3);
+        colaInt.addNode(8);
+        colaInt.addNode(347);
+        System.out.println("Elemento al inicio de la colaInt "+colaInt.peek());
+        System.out.println("Eliminado el primer objeto"+colaInt.remove());
+        System.out.println("Elemento al inicio de la colaInt "+colaInt.peek());
+
+        ColaGenerica<String> colaString = new ColaGenerica<>();
+        colaString.addNode("hola");
+        colaString.addNode("hola2");
+        colaString.addNode("hola3");
+        colaString.addNode("hola4");
+        System.out.println("Tamaño de la cola  "+colaString.getSize());
+        System.out.println("Elemento al inicio de la colaInt "+colaString.peek());
+        System.out.println("Eliminado el primer objeto"+colaString.remove());
+        System.out.println("Elemento al inicio de la colaInt "+colaString.peek());
+        System.out.println("Tamaño de la cola  "+colaString.getSize());
+        ColaGenerica<Double> colaDouble = new ColaGenerica<>();
+        System.out.println("");
+        colaDouble.addNode(1.5);
+        colaDouble.addNode(43.0);
+        colaDouble.addNode(5.42);
+        colaDouble.addNode(5.0);
+        System.out.println("Tamaño de la cola  "+colaDouble.getSize());
+        System.out.println("Elemento al inicio de la colaInt "+colaDouble.peek());
+        System.out.println("Eliminado el primer objeto"+colaDouble.remove());
+        System.out.println("Elemento al inicio de la colaInt "+colaDouble.peek());
+        System.out.println("Tamaño de la cola  "+colaDouble.getSize());
     }
 }
