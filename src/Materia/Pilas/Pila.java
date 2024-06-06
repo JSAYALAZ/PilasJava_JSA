@@ -5,9 +5,11 @@ import java.util.EmptyStackException;
 import Materia.Model.Node;
 
 public class Pila {
-    private Node top;    
+    private Node top;   
+    private int size; 
     public Pila(){
         top = null;
+        size=0;
     }
 
 
@@ -16,6 +18,7 @@ public class Pila {
         Node newNode = new Node(value);
         newNode.next=top;
         top = newNode;
+        size++;
     }
 
     public int pop(){
@@ -26,6 +29,7 @@ public class Pila {
         else{
             int value = top.value;
             top = top.next;
+            size--;
             return value;
         }
     }
@@ -41,5 +45,8 @@ public class Pila {
 
     public boolean isEmpty(){
         return top == null;
+    }
+    public int size(){
+        return size;
     }
 }
