@@ -69,19 +69,26 @@ public class App {
         // System.out.println("Elemento al inicio de la colaInt "+colaDouble.peek());
         // System.out.println("Tamaño de la cola  "+colaDouble.getSize());
 
-        Ejercicio_01_sign sign = new Ejercicio_01_sign();
-        if(!sign.SignValidator("{[()](){}()}")){
-            System.out.println("No es invalido");
-        };
-        System.out.println("Es valido");
 
-        Pila pila = new Pila();
-        pila.push(5);
-        pila.push(1);
-        pila.push(4);
-        pila.push(2);
-        Ejercicio_02_sorting ejerci2 = new Ejercicio_02_sorting();
-        ejerci2.sortStack(pila);
+// EJERCICIO 2
+        // Ejercicio_01_sign sign = new Ejercicio_01_sign();
+        // if(!sign.SignValidator("{[()](){}()}")){
+        //     System.out.println("No es invalido");
+        // };
+        // System.out.println("Es valido");
+
+        // Pila pila = new Pila();
+        // pila.push(5);
+        // pila.push(1);
+        // pila.push(4);
+        // pila.push(2);
+        // Ejercicio_02_sorting ejerci2 = new Ejercicio_02_sorting();
+        // ejerci2.sortStack(pila);
+
+// EJERCICIO 3
+        
+
+
 
     }
 }
