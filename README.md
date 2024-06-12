@@ -13,3 +13,5 @@ UPS - CUENCA
 - Estructura datos lineales - Colas
 ### v2.0.2
 - Listas enlazadas
+### 2.0.3
+- Estructuras Lineales – Ejercicios LinkedList

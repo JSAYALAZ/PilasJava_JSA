@@ -1,7 +1,11 @@
+import java.util.LinkedList;
+
 import Ejercicio_01_sign.Ejercicio_01_sign;
 import Ejercicio_02_sorting.Ejercicio_02_sorting;
+import Ejercicio_03_linkedLists.LinkedListEjr;
 import Materia.Colas.Cola;
 import Materia.Colas.ColaGenerica;
+import Materia.ListasEnlazadas.ListaEnlazada;
 import Materia.Model.Pantalla;
 import Materia.Pilas.Pila;
 import Materia.Pilas.PilaGenerica;
@@ -86,9 +90,13 @@ public class App {
         // ejerci2.sortStack(pila);
 
 // EJERCICIO 3
-        
-
-
-
+        ListaEnlazada listaEnlazada = new ListaEnlazada();
+        listaEnlazada.add(1);
+        listaEnlazada.add(2);
+        listaEnlazada.add(5);
+        listaEnlazada.add(7);
+        listaEnlazada.add(6);
+        LinkedListEjr ejercicio3 = new LinkedListEjr(listaEnlazada);
+        System.out.println(ejercicio3.getByPos(3));
     }
 }
